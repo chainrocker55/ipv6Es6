@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./big-number.js"></script>
+    <script src="./ipv6.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+
+    <title>Network</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <h1 class="text-center">Calculator</h1>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="input-group">
+            <h2 class="text-center">IPV6</h2> &nbsp; &nbsp; &nbsp;
+            <input type="text" id="ip" class="form-control" style="width: 500px">
+            <div class="input-group-append">
+                <h2 class="text-center">Prefix Length</h2> &nbsp; &nbsp; &nbsp;
+                <select id="prefix" title="Prefix length"></select>
+            </div>
+            <button onclick="btnClick()" type="button" class="btn btn-primary">calculate</button>
+        </div>
+        <br>
+        <br>
+        <div class="input-group">
+            <h5>IP address</h5> &nbsp; &nbsp; &nbsp; <p id="IPaddress">IPaddress</p>
+        </div>
+        <div class="input-group">
+            <h5>Network</h5> &nbsp; &nbsp; &nbsp; <p id="Network">Network</p>
+        </div>
+        <div class="input-group">
+            <h5>Prefix length</h5> &nbsp; &nbsp; &nbsp; <p id="Prefixlength">Prefix length</p>
+        </div>
+        <div class="input-group">
+            <h5>network range :</h5> &nbsp; &nbsp; &nbsp; <p id="range">network range</p>
+        </div>
+        <div class="input-group">
+            <h5>Total IP addresses :</h5> &nbsp; &nbsp; &nbsp; <p id="totalIP">total IP addresses</p>
+        </div>
+        <div class="input-group">
+            <h5>IP address (full) :</h5> &nbsp; &nbsp; &nbsp; <p id="IPfull">IP address (full)</p>
+        </div>
+        <div class="input-group">
+            <h5>Integer ID :</h5> &nbsp; &nbsp; &nbsp; <p id="integerID">integer ID</p>
+        </div>
+        <div class="input-group">
+            <h5>Hexadecimal ID :</h5> &nbsp; &nbsp; &nbsp; <p id="hexadecimalID">Hexadecimal ID</p>
+        </div>
+        <div class="input-group">
+            <h5>Dotted decimal ID :</h5> &nbsp; &nbsp; &nbsp; <p id="dottedID">dotted decimal ID</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <h1 class="text-center">Subnet</h1>
+        <div id="subnet" class="text-center"></div>
+    </div>
+    <script>prefix()</script>
+</body>
+
+</html>
